@@ -1,0 +1,7 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-bot
+    restart: always
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
